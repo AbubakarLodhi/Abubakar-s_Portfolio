@@ -855,6 +855,34 @@
                 font-size: 34px;
             }
         }
+
+        /* FOOTER GHOST TEXT */
+        .mil-ghost-footer { 
+            position: relative; 
+            padding: 120px 0; 
+            text-align: center; 
+            overflow: hidden; 
+        }
+
+        .mil-ghost-lg {
+            position: absolute; 
+            bottom: -20px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            font-size: 200px; 
+            font-weight: 900; 
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.03); 
+            z-index: -1; 
+            transition: 0.8s ease-in-out;
+        }
+
+        .mil-ghost-footer:hover .mil-ghost-lg { 
+            color: rgba(255, 152, 0, 0.08); 
+            letter-spacing: 15px; 
+        }
+
+
     </style>
 </head>
 <body>
@@ -1034,6 +1062,13 @@
     <!-- ============================================================
          CONTACT / FOOTER SECTION
     ============================================================ -->
+    <section id="contact" class="mil-ghost-footer dark-section">
+        <div class="mil-ghost-text">Contact</div>
+        
+        <div class="container">
+            <h1 class="contact-heading mil-uppercase"></h1>
+        </div>
+    </section>
     <footer id="contact" class="mil-ghost-footer dark-section">
         <div class="mil-ghost-lg">Abubakar</div>
 
