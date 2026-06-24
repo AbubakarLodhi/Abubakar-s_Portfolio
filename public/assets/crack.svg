@@ -1,0 +1,14 @@
+<svg viewBox="0 0 260 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.9">
+    <path d="M20 80 L45 20 L70 35 L95 10 L120 30 L145 5 L170 25 L195 15 L220 40 L240 60" stroke="#a8a8a8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M30 90 L55 45 L80 55 L105 35 L130 50 L155 30 L180 42 L205 28 L230 55 L250 75" stroke="#8a8a8a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M10 95 L35 60 L60 70 L85 50 L110 65 L135 45 L160 58 L185 48 L210 68 L235 85 L250 95" stroke="#6b6b6b" stroke-width="1" stroke-linecap="round"/>
+    <polygon points="45,20 55,45 70,35" fill="#9e9e9e" opacity="0.7"/>
+    <polygon points="95,10 105,35 120,30" fill="#b0b0b0" opacity="0.65"/>
+    <polygon points="145,5 155,30 170,25" fill="#888" opacity="0.7"/>
+    <polygon points="195,15 205,28 220,40" fill="#7a7a7a" opacity="0.6"/>
+    <polygon points="60,70 80,55 95,65" fill="#6b6b6b" opacity="0.55"/>
+    <polygon points="130,50 150,38 165,52" fill="#757575" opacity="0.5"/>
+    <polygon points="185,48 200,35 215,52" fill="#5c5c5c" opacity="0.55"/>
+  </g>
+</svg>

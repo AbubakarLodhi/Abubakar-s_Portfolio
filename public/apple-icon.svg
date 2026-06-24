@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <rect width="180" height="180" rx="40" fill="#000000"/>
+  <text
+    x="90"
+    y="118"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="64"
+    font-weight="800"
+    letter-spacing="-3"
+    fill="#FFFFFF"
+  >AKL</text>
+  <circle cx="142" cy="38" r="14" fill="#FF5722"/>
+</svg>
