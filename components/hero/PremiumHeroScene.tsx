@@ -11,6 +11,7 @@ import { notifyPhoneHeroReady } from "@/lib/phone-auto-scroll";
 export function PremiumHeroScene() {
   const sceneRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
+  const anchorRef = useRef<HTMLDivElement>(null);
   const phoneRef = useRef<HTMLDivElement>(null);
   const crackWrapRef = useRef<HTMLDivElement>(null);
   const crackSvgRef = useRef<SVGSVGElement>(null);
@@ -21,6 +22,38 @@ export function PremiumHeroScene() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scene = sceneRef.current;
+    const anchor = anchorRef.current;
+    if (!scene || !anchor) return;
+
+    const PHONE_RATIO = 2.2;
+    const MAX_WIDTH = 260;
+
+    const fitPhone = () => {
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        anchor.style.removeProperty("width");
+        return;
+      }
+
+      const { width: sceneW, height: sceneH } = scene.getBoundingClientRect();
+      if (sceneW <= 0 || sceneH <= 0) return;
+
+      const width = Math.min(sceneW * 0.72, sceneH * 0.92 / PHONE_RATIO, MAX_WIDTH);
+      anchor.style.width = `${Math.max(118, Math.floor(width))}px`;
+    };
+
+    fitPhone();
+    const ro = new ResizeObserver(fitPhone);
+    ro.observe(scene);
+    window.addEventListener("resize", fitPhone, { passive: true });
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", fitPhone);
+    };
+  }, []);
 
   useEffect(() => {
     const scene = sceneRef.current;
@@ -56,8 +89,10 @@ export function PremiumHeroScene() {
       return;
     }
 
-    const dropY = -(window.innerHeight * (window.innerWidth < 640 ? 0.85 : 1.15));
     const isMobile = window.innerWidth < 768;
+    const dropY = isMobile
+      ? -(scene.getBoundingClientRect().height * 1.1)
+      : -(window.innerHeight * 1.15);
 
     gsap.set(phone, { y: dropY, rotation: -6, force3D: true });
     gsap.set(crackWrap, { opacity: 0, scale: 0.85 });
@@ -194,7 +229,7 @@ export function PremiumHeroScene() {
 
             <div ref={dustRef} className="premium-hero__dust-layer" aria-hidden />
 
-            <div className="premium-hero__phone-anchor">
+            <div ref={anchorRef} className="premium-hero__phone-anchor">
               <div ref={phoneRef} className="premium-hero__phone">
                 <div className="premium-hero__phone-tilt">
                   <PhoneMockup className="w-full" variant="hero">
@@ -211,14 +246,14 @@ export function PremiumHeroScene() {
           <div className="premium-hero__glass mx-auto w-full lg:mx-0">
             <p
               ref={labelRef}
-              className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500 sm:text-sm"
+              className="premium-hero__label mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-500 sm:mb-4 sm:text-xs sm:tracking-[0.35em]"
             >
-              
+              Abubakar Khan Lodhi
             </p>
 
             <h1
               ref={titleRef}
-              className="font-display text-[clamp(1.875rem,8vw,4.75rem)] font-extrabold leading-[1.05] tracking-tight"
+              className="premium-hero__title font-display text-[clamp(1.75rem,7.5vw,4.75rem)] font-extrabold leading-[1.08] tracking-tight"
             >
               <span className="block text-white">Full Stack</span>
               <span className="block text-accent-500">Developer</span>
@@ -227,7 +262,7 @@ export function PremiumHeroScene() {
 
             <p
               ref={descRef}
-              className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-zinc-400 sm:text-base lg:mx-0 lg:text-lg"
+              className="premium-hero__desc mx-auto mt-4 max-w-md text-sm leading-relaxed text-zinc-400 sm:mt-6 sm:text-base lg:mx-0 lg:text-lg"
             >
               Scroll inside the phone or continue down the page to explore my full
               portfolio — education, experience, skills, projects, and contact.
@@ -235,7 +270,7 @@ export function PremiumHeroScene() {
 
             <div
               ref={hintRef}
-              className="mt-8 flex items-center justify-center gap-3 text-xs text-zinc-500 sm:text-sm lg:justify-start"
+              className="premium-hero__hint mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-[11px] text-zinc-500 sm:mt-8 sm:text-sm lg:justify-start lg:text-left"
             >
               <span className="inline-block h-2 w-2 rounded-full bg-accent-500 shadow-[0_0_12px_rgba(255,87,34,0.8)]" />
               Scroll the phone or the page below

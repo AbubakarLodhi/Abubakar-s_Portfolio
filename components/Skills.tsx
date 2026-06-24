@@ -49,9 +49,9 @@ function LanguageGrid({ compact }: { compact: boolean }) {
         ))}
       </div>
 
-      <div className="mt-2 flex justify-center">
+      <div className="mt-2 flex justify-center sm:justify-center">
         <div
-          className={`group flex w-full max-w-[calc(50%-0.25rem)] items-center gap-3 border border-white/[0.08] bg-black sm:max-w-[calc(33.333%-0.33rem)] lg:max-w-[calc(25%-0.375rem)] ${
+          className={`group flex w-full max-w-full items-center gap-3 border border-white/[0.08] bg-black sm:max-w-[calc(33.333%-0.33rem)] lg:max-w-[calc(25%-0.375rem)] ${
             compact ? "px-3 py-2.5" : "px-4 py-3.5 transition-colors hover:border-accent-500/30 sm:px-5 sm:py-4"
           }`}
         >

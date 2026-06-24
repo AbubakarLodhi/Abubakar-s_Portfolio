@@ -15,15 +15,15 @@ export function SiteHero() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center lg:text-left"
+          className="min-w-0 text-center lg:text-left"
         >
-          <p className="text-xs uppercase tracking-[0.25em] text-accent-500 sm:text-sm">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-accent-500 sm:text-xs sm:tracking-[0.25em]">
             {HERO.greeting}
           </p>
-          <h2 className="mt-2 font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="mt-2 font-display text-[clamp(1.75rem,6vw,3rem)] font-extrabold leading-tight text-white md:text-5xl">
             {HERO.title}
           </h2>
-          <p className="mt-3 text-lg font-light text-zinc-400 sm:text-xl">{HERO.role}</p>
+          <p className="mt-3 text-base font-light text-zinc-400 sm:text-lg md:text-xl">{HERO.role}</p>
           <p className="mx-auto mt-6 max-w-lg text-sm leading-relaxed text-zinc-500 sm:text-base lg:mx-0">
             {HERO.description}
           </p>
@@ -43,7 +43,7 @@ export function SiteHero() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="relative mx-auto aspect-[4/5] w-full max-w-[280px] sm:max-w-sm md:max-w-md"
+          className="relative mx-auto aspect-[4/5] w-full min-w-0 max-w-[min(280px,88vw)] sm:max-w-sm md:max-w-md"
         >
           <div className="absolute -inset-4 bg-accent-500/10 blur-2xl" />
           <div className="relative h-full overflow-hidden border border-accent-500/30">

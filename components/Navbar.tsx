@@ -57,17 +57,17 @@ export function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed inset-x-0 top-0 z-50 transition-shadow duration-300 ${
+        className={`fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-shadow duration-300 ${
           scrolled ? "glass-nav shadow-lg" : "bg-transparent"
         }`}
       >
-        <div className="flex h-[4.5rem] items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-16">
+        <div className="flex h-16 items-center justify-between px-[max(1rem,env(safe-area-inset-left))] sm:px-6 lg:px-10 xl:px-16">
           <motion.button
             type="button"
             onClick={() => scrollToSection("portfolio")}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className={`font-display text-2xl font-extrabold tracking-tighter transition-colors ${
+            className={`font-display text-xl font-extrabold tracking-tighter transition-colors sm:text-2xl ${
               active === "portfolio" ? "text-accent-500" : "text-white"
             }`}
           >
@@ -126,14 +126,14 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 top-[4.5rem] z-40 bg-black/70 md:hidden"
+              className="fixed inset-0 top-[calc(4rem+env(safe-area-inset-top))] z-40 bg-black/70 md:hidden"
               onClick={() => setMenuOpen(false)}
             />
             <motion.nav
               initial={{ opacity: 0, y: -16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
-              className="fixed inset-x-0 top-[4.5rem] z-50 border-b border-white/10 bg-black p-4 shadow-xl md:hidden"
+              className="fixed inset-x-0 top-[calc(4rem+env(safe-area-inset-top))] z-50 max-h-[calc(100dvh-4rem-env(safe-area-inset-top))] overflow-y-auto border-b border-white/10 bg-black p-4 shadow-xl md:hidden"
             >
               <button
                 type="button"

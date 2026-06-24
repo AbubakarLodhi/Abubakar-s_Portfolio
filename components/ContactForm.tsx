@@ -17,7 +17,7 @@ interface Web3FormsResponse {
 const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
 
 const inputClass =
-  "w-full border border-white/10 bg-surface-100 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 outline-none transition-colors focus:border-accent-500/60 focus:ring-1 focus:ring-accent-500/30";
+  "w-full min-w-0 border border-white/10 bg-surface-100 px-3 py-2.5 text-base text-white placeholder:text-zinc-600 outline-none transition-colors focus:border-accent-500/60 focus:ring-1 focus:ring-accent-500/30 sm:text-sm";
 
 const inputClassCompact =
   "w-full border border-white/10 bg-black px-2.5 py-2 text-[11px] text-white placeholder:text-zinc-600 outline-none transition-colors focus:border-accent-500/60";

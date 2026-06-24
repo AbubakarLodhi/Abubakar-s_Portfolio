@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Navbar />
       <PhoneShowcase />
-      <main>
+      <main className="min-w-0 overflow-x-clip">
         <SiteHero />
         <Education />
         <Experience />

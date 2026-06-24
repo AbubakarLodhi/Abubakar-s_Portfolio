@@ -25,7 +25,7 @@ export function SectionHeader({
     compact ? "mb-3 h-px w-10" : "mb-5 h-0.5 w-16"
   }`;
   const titleClass = `font-display font-bold tracking-tight ${
-    compact ? "text-lg" : "text-3xl sm:text-4xl"
+    compact ? "text-lg" : "text-2xl sm:text-3xl md:text-4xl"
   } ${light ? "text-white" : "text-white"}`;
   const subtitleClass = `mt-2 text-zinc-400 ${
     compact ? "text-xs leading-relaxed" : "mt-3 max-w-xl text-base"
@@ -45,7 +45,7 @@ export function SectionHeader({
   }
 
   return (
-    <div className="mb-12 sm:mb-14">
+    <div className="mb-10 sm:mb-12 md:mb-14">
       <motion.span
         initial="hidden"
         whileInView="visible"

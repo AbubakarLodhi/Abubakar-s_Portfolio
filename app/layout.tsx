@@ -29,6 +29,7 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  viewportFit: "cover",
   themeColor: "#000000",
 };
 
@@ -39,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
-      <body className="overflow-x-hidden bg-black">{children}</body>
+      <body className="min-w-0 overflow-x-clip bg-black">{children}</body>
     </html>
   );
 }

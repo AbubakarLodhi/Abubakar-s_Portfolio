@@ -84,16 +84,16 @@ export function Contact({ compact = false }: ContactProps) {
         />
 
         <Animated type="up" delay={0.08}>
-          <h2 className="mt-6 font-display text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
+          <h2 className="mt-6 font-display text-[clamp(1.5rem,6vw,3rem)] font-extrabold text-white sm:text-4xl lg:text-5xl">
             Ready to work together?
           </h2>
         </Animated>
 
         <Animated type="up" delay={0.14}>
-          <p className="mt-4 text-lg text-zinc-400">
+          <p className="mt-4 text-base text-zinc-400 sm:text-lg">
             <strong className="text-accent-500">Location:</strong> {SITE.location}
           </p>
-          <p className="mt-2 text-lg text-zinc-400">
+          <p className="mt-2 text-base text-zinc-400 sm:text-lg">
             <strong className="text-accent-500">Call:</strong> {SITE.phone}
           </p>
           <p className="mt-2 break-all text-sm text-zinc-500 sm:break-normal sm:text-base">
