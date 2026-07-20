@@ -48,6 +48,9 @@ function ExperienceItem({
         }`}
       >
         {item.company}
+        {"period" in item && item.period ? (
+          <span className="block font-normal text-zinc-500">{item.period}</span>
+        ) : null}
       </p>
 
       <ul className={compact ? "space-y-1.5" : "space-y-2"}>
@@ -89,7 +92,7 @@ export function Experience({ compact = false }: ExperienceProps) {
           <div className={timelineClass}>
             {EXPERIENCE.items.map((item) => (
               <article
-                key={item.company}
+                key={`${item.company}-${item.role}`}
                 className="relative pb-6 last:pb-0"
               >
                 <ExperienceItem item={item} compact />
@@ -106,7 +109,7 @@ export function Experience({ compact = false }: ExperienceProps) {
           >
             {EXPERIENCE.items.map((item) => (
               <motion.article
-                key={item.company}
+                key={`${item.company}-${item.role}`}
                 variants={fadeUp}
                 className="relative pb-10 last:pb-0"
               >

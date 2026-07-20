@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Abubakar Khan Lodhi | Full Stack Developer",
   description:
-    "Portfolio of Abubakar Khan Lodhi — Full Stack Developer specializing in React, Next.js, Laravel, automation testing, and scalable web applications. Lahore, Pakistan.",
+    "Portfolio of Abubakar Khan Lodhi — Full Stack Developer specializing in Laravel, React, Next.js, TypeScript, and scalable web applications. Lahore, Pakistan.",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: ["/favicon.svg"],

@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Abubakar Khan Lodhi",
   role: "Full Stack Developer",
-  tagline: "Full Stack · Automation Testing · Web Applications",
+  tagline: "Full Stack · Laravel · React · Next.js · AI/ML",
   location: "Lahore, Pakistan",
   email: "a.blodhi000@gmail.com",
   phone: "+92 346 1000454",
@@ -22,9 +22,9 @@ export const NAV_LINKS = [
 export const HERO = {
   greeting: "Hi, I am",
   title: "Abubakar Khan Lodhi",
-  role: "Full Stack Developer / Automation Engineer",
+  role: "Full Stack Developer",
   description:
-    "Dedicated Full Stack Developer focused on delivering high-quality digital solutions — intelligent chatbots, rigorous automation testing, and scalable web applications for global clients.",
+    "Results-driven Full Stack Developer specializing in scalable web applications with Laravel, PHP, React.js, Next.js, and TypeScript. I build high-performance solutions with clean architecture, automation workflows, and quality-focused development — plus hands-on experience in chatbots, machine learning, and deep learning models for real-world applications.",
 } as const;
 
 export const EDUCATION = {
@@ -54,16 +54,28 @@ export const EXPERIENCE = {
   label: "Career",
   title: "Professional Experience",
   subtitle:
-    "Industry experience building web applications, chatbots, and quality-driven digital solutions.",
+    "Building scalable full-stack web applications with Laravel, React, and Next.js.",
   items: [
     {
-      badge: "Internship",
-      role: "Intern",
+      badge: "Current",
+      role: "Web Developer",
       company: "WeRQA",
+      period: "July 2026 — Present",
       points: [
-        "Developed intelligent chatbots and executed rigorous automation testing for global clients.",
-        "Built company portfolios, websites, and scalable web applications with a quality-driven approach.",
-        "Bridged frontend and backend development with reliable test automation for seamless user experiences.",
+        "Develop and maintain modern full-stack web applications using Laravel, PHP, React.js, and Next.js.",
+        "Design responsive, scalable solutions with seamless frontend and backend integration.",
+        "Optimize code and system efficiency while delivering new features across the software lifecycle.",
+        "Collaborate to ship reliable, maintainable, and user-focused web applications.",
+      ],
+    },
+    {
+      badge: "Internship",
+      role: "Web Developer Intern",
+      company: "WeRQA",
+      period: "April 2026 — July 2026",
+      points: [
+        "Developed and maintained full-stack web applications using Laravel, PHP, React.js, and Next.js.",
+        "Built scalable web solutions, implemented new features, and optimized performance across the stack.",
       ],
     },
   ],
@@ -105,6 +117,7 @@ export const CORE_SKILLS = [
 ] as const;
 
 export type ProjectId =
+  | "app_lens"
   | "werqa_site"
   | "chest_xray"
   | "contact_book"
@@ -123,8 +136,23 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "werqa_site",
+    id: "app_lens",
     number: "01",
+    title: "App Lens",
+    shortDesc:
+      "Web QA tool that scans sites for UI issues, broken links, console errors, and accessibility problems.",
+    body: "App Lens is a web QA and testing tool that scans websites for UI issues, broken links, console errors, and accessibility problems. It auto-generates test cases, captures screenshots and recordings, and exports reports — all organized by project. Built with React, Node.js, and Puppeteer, it runs in the browser or as an Electron desktop app for full-site automation without CORS limits.",
+    tags: ["Vite", "React", "TypeScript", "Express", "Node.js", "Electron"],
+    highlights: [
+      "Automated UI, link, console, and accessibility scanning",
+      "Auto-generated test cases with screenshots and recordings",
+      "Browser and Electron desktop modes for full-site automation",
+      "Project-based reports and export workflows",
+    ],
+  },
+  {
+    id: "werqa_site",
+    number: "02",
     title: "WeRQA Website",
     shortDesc:
       "Platform stability and visual flow optimization through testing and precise code fixes.",
@@ -138,7 +166,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "chest_xray",
-    number: "02",
+    number: "03",
     title: "Chest X-Ray Detection",
     shortDesc:
       "Deep learning system for pneumonia detection from chest X-ray images.",
@@ -152,7 +180,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "contact_book",
-    number: "03",
+    number: "04",
     title: "Contact Book",
     shortDesc:
       "Console-based contact manager built with C++ and core data structures.",
@@ -166,7 +194,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "kellyas",
-    number: "04",
+    number: "05",
     title: "Kellyas UI Template",
     shortDesc:
       "Responsive front-end template with modern UI and intuitive navigation.",
@@ -180,7 +208,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "railway",
-    number: "05",
+    number: "06",
     title: "Railway Management System",
     shortDesc:
       "Interactive front-end for train schedules, bookings, and secure login.",
