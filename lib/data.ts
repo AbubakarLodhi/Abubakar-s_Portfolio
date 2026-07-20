@@ -35,7 +35,7 @@ export const EDUCATION = {
     {
       school: "University of Management and Technology",
       degree: "BS in Computer Science",
-      period: "Oct 2022 — Present",
+      period: "2022 — 2026",
       gpa: "3.18 / 4.0",
       coursework: [
         "Programming Fundamentals",
