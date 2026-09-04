@@ -33,5 +33,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# legacy
+# local scratch
+.shots/
+.video-frames/
 index.html.bak

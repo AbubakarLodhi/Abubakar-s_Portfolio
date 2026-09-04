@@ -1,10 +1,8 @@
 export const SITE = {
   name: "Abubakar Khan Lodhi",
   role: "Full Stack Developer",
-  tagline: "Full Stack · Laravel · React · Next.js · AI/ML",
   location: "Lahore, Pakistan",
   email: "a.blodhi000@gmail.com",
-  phone: "+92 346 1000454",
   github: "https://github.com/AbubakarLodhi",
   linkedin: "https://www.linkedin.com/in/abubakar-lodhi",
   resume: "/cv/Abubakar_s_Resume.pdf",
@@ -54,7 +52,7 @@ export const ABOUT_COPY = {
   ],
 } as const;
 
-/** Expertise — mirrors SERVICES but carries the longer descriptions. */
+/** Expertise rows shown in the Expertise section. */
 export const EXPERTISE = [
   {
     number: "01",
@@ -123,59 +121,6 @@ export const CONTACT_COPY = {
     "Have a project in mind, a question, or simply want to talk about an idea? I'd love to hear from you.",
 } as const;
 
-export const HERO_FOCUS = [
-  "Web Development",
-  "Full Stack Apps",
-  "Clean Architecture",
-  "React & Next.js",
-  "Laravel & PHP",
-] as const;
-
-export const STATS = [
-  { value: "5+", label: "Projects Launched" },
-  { value: "2+", label: "Years Building" },
-  { value: "9+", label: "Core Technologies" },
-] as const;
-
-export const SERVICES = [
-  {
-    number: "01",
-    title: "Full Stack Development",
-    tags: ["Laravel", "React", "Next.js"],
-    accent: "orange" as const,
-    icon: "layers" as const,
-  },
-  {
-    number: "02",
-    title: "Frontend Engineering",
-    tags: ["TypeScript", "UI Systems", "Responsive"],
-    accent: "dark" as const,
-    icon: "code" as const,
-  },
-  {
-    number: "03",
-    title: "Backend & APIs",
-    tags: ["PHP", "Node.js", "MySQL"],
-    accent: "dark" as const,
-    icon: "server" as const,
-  },
-  {
-    number: "04",
-    title: "AI & Automation",
-    tags: ["Python", "ML Models", "QA Tools"],
-    accent: "orange" as const,
-    icon: "bot" as const,
-  },
-] as const;
-
-export const HERO = {
-  greeting: "Hi, I am",
-  title: "Abubakar Khan Lodhi",
-  role: "Full Stack Developer",
-  description:
-    "Full Stack Developer experienced in Laravel, PHP, React.js, Next.js, and TypeScript, building scalable web applications, REST APIs, responsive interfaces, and automation workflows. Hands-on experience developing AI-powered applications, chatbots, and ML/DL models, with strong expertise in AI-assisted development, debugging, optimization, and problem-solving.",
-} as const;
-
 export const EDUCATION = {
   label: "Academics",
   title: "Education",
@@ -240,47 +185,6 @@ export const LANGUAGES = [
   "SQL",
   "HTML",
   "CSS",
-] as const;
-
-/** Grouped stack, mirroring the Technologies block on the CV. */
-export const TECH_STACK = [
-  {
-    label: "Frontend",
-    items: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Framer Motion", "GSAP", "Three.js"],
-  },
-  {
-    label: "Backend & APIs",
-    items: ["Node.js", "Express.js", "Laravel", "Django", "Django REST", "Livewire"],
-  },
-  { label: "Databases", items: ["PostgreSQL", "MySQL"] },
-  {
-    label: "AI & Automation",
-    items: ["Chatbots", "Machine Learning", "Deep Learning", "YOLO", "OpenCV", "MediaPipe", "Puppeteer"],
-  },
-  { label: "Deployment", items: ["Git", "GitHub", "Vercel", "cPanel"] },
-] as const;
-
-export const TOOL_LOGOS = [
-  { src: "/logos/bugzilla.jpeg", alt: "Bugzilla" },
-  { src: "/logos/chrome-devtools.png", alt: "Chrome DevTools" },
-  { src: "/logos/figma.png", alt: "Figma" },
-  { src: "/logos/github.png", alt: "GitHub" },
-  { src: "/logos/Jira.png", alt: "Jira" },
-  { src: "/logos/jmeter.png", alt: "JMeter" },
-  { src: "/logos/mysql.png", alt: "MySQL" },
-  { src: "/logos/playwright.png", alt: "Playwright" },
-  { src: "/logos/promp.jpg", alt: "Prompt Engineering" },
-  { src: "/logos/slack.png", alt: "Slack" },
-  { src: "/logos/testrails.jpeg", alt: "TestRails" },
-  { src: "/logos/trello.png", alt: "Trello" },
-  { src: "/logos/vs code.jpeg", alt: "VS Code" },
-] as const;
-
-export const CORE_SKILLS = [
-  { src: "/logos/API testing.png", label: "API Testing" },
-  { src: "/logos/Automation Testing.png", label: "Automation Testing" },
-  { src: "/logos/Maunal Testing.png", label: "Manual Testing" },
-  { src: "/logos/Performance testing.png", label: "Performance Testing" },
 ] as const;
 
 export type ProjectId =
