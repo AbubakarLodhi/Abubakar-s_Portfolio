@@ -1,27 +1,29 @@
-import { Navbar } from "@/components/Navbar";
-import { PhoneShowcase } from "@/components/PhoneShowcase";
-import { SiteHero } from "@/components/SiteHero";
-import { Education } from "@/components/Education";
-import { Experience } from "@/components/Experience";
-import { Skills } from "@/components/Skills";
-import { Projects } from "@/components/Projects";
-import { Contact } from "@/components/Contact";
-import { BackToTop } from "@/components/BackToTop";
+import { Preloader } from "@/components/creative/Preloader";
+import { SmoothScroll } from "@/components/creative/SmoothScroll";
+import { Cursor } from "@/components/creative/Cursor";
+import { Nav } from "@/components/creative/Nav";
+import { Hero } from "@/components/creative/Hero";
+import { About } from "@/components/creative/About";
+import { Expertise } from "@/components/creative/Expertise";
+import { Work } from "@/components/creative/Work";
+import { Experience } from "@/components/creative/Experience";
+import { Contact } from "@/components/creative/Contact";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <PhoneShowcase />
-      <main className="min-w-0 overflow-x-clip">
-        <SiteHero />
-        <Education />
+      <Preloader />
+      <SmoothScroll />
+      <Cursor />
+      <Nav />
+      <main className="min-w-0">
+        <Hero />
+        <About />
+        <Expertise />
+        <Work />
         <Experience />
-        <Skills />
-        <Projects />
         <Contact />
       </main>
-      <BackToTop />
     </>
   );
 }

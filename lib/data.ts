@@ -12,11 +12,160 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { href: "#about", label: "About me" },
+  { href: "#work", label: "Work" },
+  { href: "#about", label: "About" },
+  { href: "#expertise", label: "Expertise" },
   { href: "#experience", label: "Experience" },
-  { href: "#skills", label: "Skills" },
-  { href: "#works", label: "Projects" },
-  { href: "#contact", label: "Contact me" },
+  { href: "#contact", label: "Contact" },
+] as const;
+
+/** Hero — oversized display word plus the small tag row beneath it. */
+export const HERO_DISPLAY = {
+  word: "FULL STACK",
+  sub: "DEVELOPER",
+  tags: ["Interfaces", "Code", "Experience"],
+  badge: "LET'S WORK TOGETHER · LET'S WORK TOGETHER ·",
+  based: "Based in Pakistan",
+} as const;
+
+/** About — the six-cell fact grid under the statement. */
+export const ABOUT_FACTS = [
+  { label: "Based", value: "Lahore, Pakistan" },
+  { label: "Focus", value: "Full Stack / Web" },
+  { label: "Experience", value: "2+ Years" },
+  { label: "Mindset", value: "Always Learning" },
+  { label: "Projects Done", value: "5+" },
+  { label: "Education", value: "BS Computer Science" },
+] as const;
+
+export const ABOUT_COPY = {
+  eyebrow: "Who am I ?",
+  statement: [
+    { text: "I BUILD ", gold: false },
+    { text: "SCALABLE WEB ", gold: true },
+    { text: "APPS WHERE ", gold: false },
+    { text: "CLEAN CODE ", gold: true },
+    { text: "MEETS ", gold: false },
+    { text: "REAL IMPACT.", gold: true },
+  ],
+  columns: [
+    "I'm Abubakar — a full stack developer working in Laravel, PHP, React, and Next.js, building scalable web apps, REST APIs, and automation workflows.",
+    "I also build AI-powered applications, chatbots, and ML/DL models, and I lean on AI-assisted development for faster debugging, optimization, and problem-solving.",
+  ],
+} as const;
+
+/** Expertise — mirrors SERVICES but carries the longer descriptions. */
+export const EXPERTISE = [
+  {
+    number: "01",
+    title: "Full Stack Development",
+    description:
+      "Building fast, responsive and scalable applications end to end with Laravel, React and Next.js.",
+    tags: ["Laravel", "React", "Next.js"],
+    icon: "layers" as const,
+  },
+  {
+    number: "02",
+    title: "Frontend Engineering",
+    description:
+      "Turning static designs into expressive, responsive interfaces through typed components and considered motion.",
+    tags: ["TypeScript", "Tailwind CSS", "Framer Motion", "GSAP"],
+    icon: "code" as const,
+  },
+  {
+    number: "03",
+    title: "Backend & APIs",
+    description:
+      "Designing REST APIs and data models with clear separation of concerns and dependable performance.",
+    tags: ["Node.js", "Express", "Django", "MySQL", "PostgreSQL"],
+    icon: "server" as const,
+  },
+  {
+    number: "04",
+    title: "AI & Automation",
+    description:
+      "Building AI-powered apps, chatbots, and ML/DL models, plus automated QA tooling for work that is tedious by hand.",
+    tags: ["Python", "Deep Learning", "OpenCV", "Puppeteer"],
+    icon: "bot" as const,
+  },
+] as const;
+
+/** Marquee strips around the Work title. */
+export const TECH_MARQUEE = [
+  "React JS",
+  "Next.js",
+  "TypeScript",
+  "Laravel",
+  "PHP",
+  "Node.js",
+  "Tailwind CSS",
+  "MySQL",
+  "PostgreSQL",
+  "Python",
+  "GSAP",
+] as const;
+
+export const DISCIPLINE_MARQUEE = [
+  "Full Stack",
+  "Interactive Web",
+  "Creative Development",
+  "Automation",
+  "UI Engineering",
+] as const;
+
+export const CONTACT_COPY = {
+  headline: [
+    { text: "Let's create", gold: false },
+    { text: "something", gold: true },
+    { text: "meaningful.", gold: false },
+  ],
+  blurb:
+    "Have a project in mind, a question, or simply want to talk about an idea? I'd love to hear from you.",
+} as const;
+
+export const HERO_FOCUS = [
+  "Web Development",
+  "Full Stack Apps",
+  "Clean Architecture",
+  "React & Next.js",
+  "Laravel & PHP",
+] as const;
+
+export const STATS = [
+  { value: "5+", label: "Projects Launched" },
+  { value: "2+", label: "Years Building" },
+  { value: "9+", label: "Core Technologies" },
+] as const;
+
+export const SERVICES = [
+  {
+    number: "01",
+    title: "Full Stack Development",
+    tags: ["Laravel", "React", "Next.js"],
+    accent: "orange" as const,
+    icon: "layers" as const,
+  },
+  {
+    number: "02",
+    title: "Frontend Engineering",
+    tags: ["TypeScript", "UI Systems", "Responsive"],
+    accent: "dark" as const,
+    icon: "code" as const,
+  },
+  {
+    number: "03",
+    title: "Backend & APIs",
+    tags: ["PHP", "Node.js", "MySQL"],
+    accent: "dark" as const,
+    icon: "server" as const,
+  },
+  {
+    number: "04",
+    title: "AI & Automation",
+    tags: ["Python", "ML Models", "QA Tools"],
+    accent: "orange" as const,
+    icon: "bot" as const,
+  },
 ] as const;
 
 export const HERO = {
@@ -24,7 +173,7 @@ export const HERO = {
   title: "Abubakar Khan Lodhi",
   role: "Full Stack Developer",
   description:
-    "Results-driven Full Stack Developer specializing in scalable web applications with Laravel, PHP, React.js, Next.js, and TypeScript. I build high-performance solutions with clean architecture, automation workflows, and quality-focused development — plus hands-on experience in chatbots, machine learning, and deep learning models for real-world applications.",
+    "Full Stack Developer experienced in Laravel, PHP, React.js, Next.js, and TypeScript, building scalable web applications, REST APIs, responsive interfaces, and automation workflows. Hands-on experience developing AI-powered applications, chatbots, and ML/DL models, with strong expertise in AI-assisted development, debugging, optimization, and problem-solving.",
 } as const;
 
 export const EDUCATION = {
@@ -36,7 +185,6 @@ export const EDUCATION = {
       school: "University of Management and Technology",
       degree: "BS in Computer Science",
       period: "2022 — 2026",
-      gpa: "3.18 / 4.0",
       coursework: [
         "Programming Fundamentals",
         "Object Oriented Programming",
@@ -45,6 +193,7 @@ export const EDUCATION = {
         "Operating Systems",
         "Artificial Intelligence",
         "Deep Learning",
+        "Machine Learning",
       ],
     },
   ],
@@ -62,10 +211,10 @@ export const EXPERIENCE = {
       company: "WeRQA",
       period: "July 2026 — Present",
       points: [
-        "Develop and maintain modern full-stack web applications using Laravel, PHP, React.js, and Next.js.",
-        "Design responsive, scalable solutions with seamless frontend and backend integration.",
-        "Optimize code and system efficiency while delivering new features across the software lifecycle.",
-        "Collaborate to ship reliable, maintainable, and user-focused web applications.",
+        "Develop and maintain modern full-stack web applications using Laravel, PHP, React.js, and Next.js, delivering features from implementation through deployment.",
+        "Design responsive and reusable frontend components with seamless integration between frontend, backend services, and APIs.",
+        "Optimize application performance, debug production issues, and improve system efficiency while delivering new features based on project requirements.",
+        "Collaborate across the software development lifecycle to ship reliable, maintainable, and user-focused products in a fast-paced environment.",
       ],
     },
     {
@@ -74,8 +223,9 @@ export const EXPERIENCE = {
       company: "WeRQA",
       period: "April 2026 — July 2026",
       points: [
-        "Developed and maintained full-stack web applications using Laravel, PHP, React.js, and Next.js.",
-        "Built scalable web solutions, implemented new features, and optimized performance across the stack.",
+        "Developed and maintained full-stack web applications using Laravel, PHP, React.js, and Next.js, contributing to features across frontend and backend systems.",
+        "Built responsive, scalable interfaces and integrated application functionality with backend services and APIs.",
+        "Implemented new features, resolved UI and functional issues, and optimized application performance to improve reliability and user experience.",
       ],
     },
   ],
@@ -83,14 +233,31 @@ export const EXPERIENCE = {
 
 export const LANGUAGES = [
   "C++",
-  "HTML",
-  "CSS",
-  "React.js",
-  "Next.js",
+  "Python",
+  "JavaScript",
   "TypeScript",
   "PHP",
-  "Laravel",
-  "Python",
+  "SQL",
+  "HTML",
+  "CSS",
+] as const;
+
+/** Grouped stack, mirroring the Technologies block on the CV. */
+export const TECH_STACK = [
+  {
+    label: "Frontend",
+    items: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Framer Motion", "GSAP", "Three.js"],
+  },
+  {
+    label: "Backend & APIs",
+    items: ["Node.js", "Express.js", "Laravel", "Django", "Django REST", "Livewire"],
+  },
+  { label: "Databases", items: ["PostgreSQL", "MySQL"] },
+  {
+    label: "AI & Automation",
+    items: ["Chatbots", "Machine Learning", "Deep Learning", "YOLO", "OpenCV", "MediaPipe", "Puppeteer"],
+  },
+  { label: "Deployment", items: ["Git", "GitHub", "Vercel", "cPanel"] },
 ] as const;
 
 export const TOOL_LOGOS = [
@@ -117,12 +284,11 @@ export const CORE_SKILLS = [
 ] as const;
 
 export type ProjectId =
+  | "crm"
+  | "prism"
   | "app_lens"
   | "werqa_site"
-  | "chest_xray"
-  | "contact_book"
-  | "kellyas"
-  | "railway";
+  | "chest_xray";
 
 export interface Project {
   id: ProjectId;
@@ -136,13 +302,43 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "app_lens",
+    id: "crm",
     number: "01",
+    title: "CRM / POS Platform",
+    shortDesc:
+      "Full-stack CRM and POS with merchant and staff panels, invoicing, and reporting.",
+    body: "A full-stack CRM/POS platform built and deployed with Laravel 12, Filament, and MySQL. It ships separate merchant and staff panels with authentication, invoicing, reporting, and demo accounts. I resolved production login and session issues, improved deployment reliability on live hosting, and designed reusable components that tie the frontend, backend, and database into one maintainable business workflow.",
+    tags: ["Laravel", "Filament", "Livewire", "MySQL", "Tailwind CSS", "Vite"],
+    highlights: [
+      "Merchant and staff panels with authentication and demo accounts",
+      "Invoicing and reporting built on Laravel 12 and Filament",
+      "Fixed production login and session failures on live hosting",
+      "Reusable components across frontend, backend, and database layers",
+    ],
+  },
+  {
+    id: "prism",
+    number: "02",
+    title: "Prism — AI Creative Studio",
+    shortDesc:
+      "AI studio for image, video, and prompt generation with workspaces and a co-pilot chatbot.",
+    body: "Prism is a full-stack AI creative studio built with Next.js and TypeScript for image, video, and prompt generation. It provides project workspaces, authentication, and an AI co-pilot chatbot, and is designed around reusable components and AI-powered workflows for generating and managing creative content.",
+    tags: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+    highlights: [
+      "Image, video, and prompt generation in one workspace",
+      "Project workspaces with authentication",
+      "AI co-pilot chatbot for guided creation",
+      "Component-driven architecture around AI workflows",
+    ],
+  },
+  {
+    id: "app_lens",
+    number: "03",
     title: "App Lens",
     shortDesc:
       "Web QA tool that scans sites for UI issues, broken links, console errors, and accessibility problems.",
     body: "App Lens is a web QA and testing tool that scans websites for UI issues, broken links, console errors, and accessibility problems. It auto-generates test cases, captures screenshots and recordings, and exports reports — all organized by project. Built with React, Node.js, and Puppeteer, it runs in the browser or as an Electron desktop app for full-site automation without CORS limits.",
-    tags: ["Vite", "React", "TypeScript", "Express", "Node.js", "Electron"],
+    tags: ["Vite", "React", "TypeScript", "Express", "Node.js", "Electron", "Puppeteer"],
     highlights: [
       "Automated UI, link, console, and accessibility scanning",
       "Auto-generated test cases with screenshots and recordings",
@@ -152,7 +348,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "werqa_site",
-    number: "02",
+    number: "04",
     title: "WeRQA Website",
     shortDesc:
       "Platform stability and visual flow optimization through testing and precise code fixes.",
@@ -166,7 +362,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "chest_xray",
-    number: "03",
+    number: "05",
     title: "Chest X-Ray Detection",
     shortDesc:
       "Deep learning system for pneumonia detection from chest X-ray images.",
@@ -176,48 +372,6 @@ export const PROJECTS: Project[] = [
       "DenseNet and EfficientNet-B0 model implementation",
       "Normal vs. Pneumonia image classification pipeline",
       "High accuracy via advanced feature extraction",
-    ],
-  },
-  {
-    id: "contact_book",
-    number: "04",
-    title: "Contact Book",
-    shortDesc:
-      "Console-based contact manager built with C++ and core data structures.",
-    body: "Developed a console-based Contact Book application using C++, implementing core Data Structures and Algorithms such as linked lists, trees, and sorting/searching techniques. Users can add, search, update, and delete contacts efficiently.",
-    tags: ["C++", "DSA", "Console App"],
-    highlights: [
-      "Linked lists, trees, and sorting/searching algorithms",
-      "Add, search, update, and delete contact operations",
-      "Strong memory management and algorithmic problem-solving",
-    ],
-  },
-  {
-    id: "kellyas",
-    number: "05",
-    title: "Kellyas UI Template",
-    shortDesc:
-      "Responsive front-end template with modern UI and intuitive navigation.",
-    body: "Designed and developed a responsive front-end website template using HTML and CSS. The layout includes a modern user interface with clean design and intuitive navigation, showcasing strong understanding of front-end web development and UI/UX principles.",
-    tags: ["HTML", "CSS", "UI/UX"],
-    highlights: [
-      "Clean, modern responsive layout",
-      "Intuitive navigation and visual hierarchy",
-      "Reusable template design patterns",
-    ],
-  },
-  {
-    id: "railway",
-    number: "06",
-    title: "Railway Management System",
-    shortDesc:
-      "Interactive front-end for train schedules, bookings, and secure login.",
-    body: "Developed the front-end of a Railway Management System using HTML, CSS, and JavaScript. The interface includes interactive train schedules, booking forms, and login credentials with a responsive, user-friendly design.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    highlights: [
-      "Interactive train schedules and booking forms",
-      "Secure login credential workflows",
-      "Fully responsive and user-friendly interface",
     ],
   },
 ];

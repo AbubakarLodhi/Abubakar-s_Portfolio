@@ -1,21 +1,36 @@
 import type { Metadata } from "next";
-import { DM_Sans, Outfit } from "next/font/google";
+import { Anton, Archivo_Black, Inter, Sacramento } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const anton = Anton({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  weight: "400",
+  variable: "--font-anton",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const archivoBlack = Archivo_Black({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  weight: "400",
+  variable: "--font-archivo-black",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const sacramento = Sacramento({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-script",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Abubakar Khan Lodhi | Full Stack Developer",
+  title: "Abubakar Khan Lodhi | Creative Developer",
   description:
     "Portfolio of Abubakar Khan Lodhi — Full Stack Developer specializing in Laravel, React, Next.js, TypeScript, and scalable web applications. Lahore, Pakistan.",
   icons: {
@@ -30,7 +45,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
   viewportFit: "cover",
-  themeColor: "#000000",
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({
@@ -39,8 +54,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
-      <body className="min-w-0 overflow-x-clip bg-black">{children}</body>
+    <html
+      lang="en"
+      className={`${anton.variable} ${archivoBlack.variable} ${inter.variable} ${sacramento.variable}`}
+    >
+      <body className="min-w-0 overflow-x-clip bg-ink font-body text-cream antialiased">
+        {children}
+      </body>
     </html>
   );
 }

@@ -8,52 +8,34 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: {
-          DEFAULT: "#FF5722",
-          50: "#FFF3EE",
-          100: "#FFE4D9",
-          400: "#FF7043",
-          500: "#FF5722",
-          600: "#E64A19",
-          700: "#D84315",
+        ink: {
+          DEFAULT: "#0a0a0a",
+          soft: "#101010",
+          card: "#141414",
+          line: "#232323",
+          muted: "#8a8a8a",
+          faint: "#5c5c5c",
         },
-        brand: {
-          400: "#FF7043",
-          500: "#FF5722",
-          600: "#E64A19",
+        cream: {
+          DEFAULT: "#f1eae0",
+          soft: "#e7ded1",
+          dim: "#cfc6b8",
         },
-        surface: {
-          50: "#1a1a1a",
-          100: "#141414",
-          200: "#0f0f0f",
-          800: "#111111",
-          900: "#0a0a0a",
-          950: "#000000",
-        },
-        rock: {
-          light: "#9e9e9e",
-          DEFAULT: "#6b6b6b",
-          dark: "#3d3d3d",
+        gold: {
+          DEFAULT: "#c6b281",
+          light: "#ddd0aa",
+          deep: "#a59060",
         },
       },
       fontFamily: {
-        display: ["var(--font-outfit)", "sans-serif"],
-        body: ["var(--font-dm-sans)", "sans-serif"],
+        display: ["var(--font-anton)", "sans-serif"],
+        heavy: ["var(--font-archivo-black)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        script: ["var(--font-script)", "cursive"],
       },
-      boxShadow: {
-        glow: "0 0 60px rgba(255, 87, 34, 0.35)",
-        "glow-sm": "0 0 30px rgba(255, 87, 34, 0.2)",
-        card: "0 8px 32px rgba(0, 0, 0, 0.5)",
-        phone: "0 25px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 87, 34, 0.15)",
-      },
-      animation: {
-        float: "float 6s ease-in-out infinite",
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-8px)" },
-        },
+      letterSpacing: {
+        wider2: "0.18em",
+        wider3: "0.28em",
       },
     },
   },

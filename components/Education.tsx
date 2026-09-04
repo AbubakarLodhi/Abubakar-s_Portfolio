@@ -36,13 +36,6 @@ function EducationCard({
           >
             {item.period}
           </span>
-          <span
-            className={`font-semibold text-zinc-500 ${
-              compact ? "text-[10px]" : "text-sm"
-            }`}
-          >
-            GPA: {item.gpa}
-          </span>
         </div>
         <h3
           className={`mt-2 font-display font-bold text-white ${
