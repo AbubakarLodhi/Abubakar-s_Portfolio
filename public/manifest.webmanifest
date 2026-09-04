@@ -1,0 +1,23 @@
+{
+  "name": "Abubakar Khan Lodhi — Full Stack Developer",
+  "short_name": "Abubakar Lodhi",
+  "description": "Portfolio of Abubakar Khan Lodhi — Full Stack Developer specializing in Laravel, React, Next.js, and scalable web apps.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
