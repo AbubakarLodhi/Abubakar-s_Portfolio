@@ -10,8 +10,9 @@ import { TouchableString } from "@/components/creative/TouchableString";
 
 const LINKS = [
   { href: "/", label: "Home" },
-  { href: "/#work", label: "Work" },
   { href: "/#about", label: "About" },
+  { href: "/#expertise", label: "Expertise" },
+  { href: "/#work", label: "Work" },
   { href: "/#contact", label: "Contact" },
 ] as const;
 
