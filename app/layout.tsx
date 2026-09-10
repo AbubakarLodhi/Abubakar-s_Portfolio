@@ -33,9 +33,9 @@ const sacramento = Sacramento({
 });
 
 const siteUrl = getSiteUrl();
-const title = `${SITE.name} | Full Stack Developer`;
+const title = `${SITE.name} | Software Engineer | Full Stack Developer`;
 const description =
-  "Portfolio of Abubakar Khan Lodhi — Full Stack Developer specializing in Laravel, React, Next.js, TypeScript, and scalable web applications. Based in Lahore, Pakistan.";
+  "Portfolio of Abubakar Khan Lodhi — Software Engineer and Full Stack Developer experienced in Laravel, PHP, React.js, Next.js, and TypeScript. Building scalable web apps, REST APIs, AI-powered tools, and ML/DL models. Based in Lahore, Pakistan.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -51,6 +51,7 @@ export const metadata: Metadata = {
   keywords: [
     "Abubakar Khan Lodhi",
     "Abubakar Lodhi",
+    "Software Engineer",
     "Full Stack Developer",
     "Laravel Developer",
     "React Developer",
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
         url: SITE.image,
         width: 1200,
         height: 1200,
-        alt: `${SITE.name} — Full Stack Developer`,
+        alt: `${SITE.name} — Software Engineer | Full Stack Developer`,
       },
     ],
   },
@@ -131,12 +132,13 @@ const jsonLd = {
       },
       sameAs: [SITE.github, SITE.linkedin],
       knowsAbout: [
+        "Software Engineering",
         "Full Stack Development",
         "Laravel",
-        "React",
+        "PHP",
+        "React.js",
         "Next.js",
         "TypeScript",
-        "PHP",
         "AI and Automation",
       ],
     },

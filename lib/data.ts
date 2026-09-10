@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Abubakar Khan Lodhi",
-  role: "Full Stack Developer",
+  role: "Software Engineer | Full Stack Developer",
   location: "Lahore, Pakistan",
   email: "a.blodhi000@gmail.com",
   github: "https://github.com/AbubakarLodhi",
@@ -29,7 +29,7 @@ export const HERO_DISPLAY = {
 /** About — the six-cell fact grid under the statement. */
 export const ABOUT_FACTS = [
   { label: "Based", value: "Lahore, Pakistan" },
-  { label: "Focus", value: "Full Stack / Web" },
+  { label: "Focus", value: "Full Stack / Software" },
   { label: "Experience", value: "2+ Years" },
   { label: "Mindset", value: "Always Learning" },
   { label: "Projects Done", value: "5+" },
@@ -47,8 +47,8 @@ export const ABOUT_COPY = {
     { text: "REAL IMPACT.", gold: true },
   ],
   columns: [
-    "I'm Abubakar — a full stack developer working in Laravel, PHP, React, and Next.js, building scalable web apps, REST APIs, and automation workflows.",
-    "I also build AI-powered applications, chatbots, and ML/DL models, and I lean on AI-assisted development for faster debugging, optimization, and problem-solving.",
+    "I'm Abubakar — a software engineer and full stack developer building scalable web applications with Laravel, PHP, React.js, Next.js, and TypeScript, including REST API integration, responsive design, debugging, performance optimization, and deployment.",
+    "I also build AI-powered applications, chatbots, automation workflows, and ML/DL models, with a strong focus on reliable, maintainable, and user-focused software solutions.",
   ],
 } as const;
 
@@ -58,49 +58,50 @@ export const EXPERTISE = [
     number: "01",
     title: "Full Stack Development",
     description:
-      "Building fast, responsive and scalable applications end to end with Laravel, React and Next.js.",
-    tags: ["Laravel", "React", "Next.js"],
+      "Building scalable web applications end to end with Laravel, PHP, React.js, Next.js, and TypeScript — from features through deployment.",
+    tags: ["Laravel", "React.js", "Next.js", "TypeScript"],
     icon: "layers" as const,
   },
   {
     number: "02",
     title: "Frontend Engineering",
     description:
-      "Turning static designs into expressive, responsive interfaces through typed components and considered motion.",
-    tags: ["TypeScript", "Tailwind CSS", "Framer Motion", "GSAP"],
+      "Designing responsive, reusable interfaces with typed components, Tailwind CSS, and considered motion.",
+    tags: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "GSAP"],
     icon: "code" as const,
   },
   {
     number: "03",
     title: "Backend & APIs",
     description:
-      "Designing REST APIs and data models with clear separation of concerns and dependable performance.",
-    tags: ["Node.js", "Express", "Django", "MySQL", "PostgreSQL"],
+      "Integrating frontend systems with backend services, REST APIs, and databases for maintainable application workflows.",
+    tags: ["Node.js", "Express.js", "Laravel", "Livewire", "MySQL", "PostgreSQL"],
     icon: "server" as const,
   },
   {
     number: "04",
     title: "AI & Automation",
     description:
-      "Building AI-powered apps, chatbots, and ML/DL models, plus automated QA tooling for work that is tedious by hand.",
-    tags: ["Python", "Deep Learning", "OpenCV", "Puppeteer"],
+      "Building AI-powered apps, chatbots, automation workflows, and ML/DL models — plus QA tooling with Puppeteer.",
+    tags: ["Python", "Chatbots", "Deep Learning", "OpenCV", "Puppeteer"],
     icon: "bot" as const,
   },
 ] as const;
 
 /** Marquee strips around the Work title. */
 export const TECH_MARQUEE = [
-  "React JS",
+  "React.js",
   "Next.js",
   "TypeScript",
   "Laravel",
   "PHP",
   "Node.js",
+  "Vite",
   "Tailwind CSS",
   "MySQL",
   "PostgreSQL",
   "Python",
-  "GSAP",
+  "Filament",
 ] as const;
 
 export const DISCIPLINE_MARQUEE = [
@@ -148,29 +149,29 @@ export const EXPERIENCE = {
   label: "Career",
   title: "Professional Experience",
   subtitle:
-    "Building scalable full-stack web applications with Laravel, React, and Next.js.",
+    "Building scalable full-stack software applications with Laravel, PHP, React.js, and Next.js.",
   items: [
     {
       badge: "Current",
-      role: "Web Developer",
+      role: "Software Engineer | Full Stack Developer",
       company: "WeRQA",
       period: "July 2026 — Present",
       points: [
-        "Develop and maintain modern full-stack web applications using Laravel, PHP, React.js, and Next.js, delivering features from implementation through deployment.",
-        "Design responsive and reusable frontend components with seamless integration between frontend, backend services, and APIs.",
-        "Optimize application performance, debug production issues, and improve system efficiency while delivering new features based on project requirements.",
-        "Collaborate across the software development lifecycle to ship reliable, maintainable, and user-focused products in a fast-paced environment.",
+        "Develop and maintain full-stack software applications using Laravel, PHP, React.js, and Next.js, contributing across frontend, backend, API, and database layers.",
+        "Design and implement responsive, reusable, and maintainable application components while integrating frontend systems with backend services and REST APIs.",
+        "Debug and resolve application and production issues, optimize performance, and improve system reliability while delivering features based on project requirements.",
+        "Contribute throughout the software development lifecycle, including development, testing, debugging, deployment, and maintenance of reliable and scalable applications.",
       ],
     },
     {
       badge: "Internship",
-      role: "Web Developer Intern",
+      role: "Full Stack Web Developer Intern",
       company: "WeRQA",
       period: "April 2026 — July 2026",
       points: [
-        "Developed and maintained full-stack web applications using Laravel, PHP, React.js, and Next.js, contributing to features across frontend and backend systems.",
-        "Built responsive, scalable interfaces and integrated application functionality with backend services and APIs.",
-        "Implemented new features, resolved UI and functional issues, and optimized application performance to improve reliability and user experience.",
+        "Developed and maintained full-stack software applications using Laravel, PHP, React.js, and Next.js, contributing across frontend, backend, API, and database layers.",
+        "Designed and implemented responsive, scalable, and maintainable application features, integrating frontend components with backend services, REST APIs, and databases.",
+        "Implemented new features, debugged and resolved functional and system-level issues, and optimized application performance to improve reliability, maintainability, and user experience.",
       ],
     },
   ],
@@ -211,12 +212,12 @@ export const PROJECTS: Project[] = [
     title: "CRM / POS Platform",
     shortDesc:
       "Full-stack CRM and POS with merchant and staff panels, invoicing, and reporting.",
-    body: "A full-stack CRM/POS platform built and deployed with Laravel 12, Filament, and MySQL. It ships separate merchant and staff panels with authentication, invoicing, reporting, and demo accounts. I resolved production login and session issues, improved deployment reliability on live hosting, and designed reusable components that tie the frontend, backend, and database into one maintainable business workflow.",
-    tags: ["Laravel", "Filament", "Livewire", "MySQL", "Tailwind CSS", "Vite"],
+    body: "Built and deployed a full-stack CRM/POS using Laravel 12, Filament, and MySQL with merchant/staff panels, authentication, invoicing, reporting, and demo accounts. Resolved production login and session issues and improved deployment reliability on live hosting. Designed reusable application components and integrated frontend, backend, and database functionality for a maintainable business workflow.",
+    tags: ["PHP", "Laravel", "Filament", "Livewire", "MySQL", "Tailwind CSS", "Vite"],
     highlights: [
-      "Merchant and staff panels with authentication and demo accounts",
-      "Invoicing and reporting built on Laravel 12 and Filament",
-      "Fixed production login and session failures on live hosting",
+      "Merchant and staff panels with authentication, invoicing, and reporting",
+      "Resolved production login and session issues on live hosting",
+      "Improved deployment reliability",
       "Reusable components across frontend, backend, and database layers",
     ],
   },
@@ -226,13 +227,13 @@ export const PROJECTS: Project[] = [
     title: "Prism — AI Creative Studio",
     shortDesc:
       "AI studio for image, video, and prompt generation with workspaces and a co-pilot chatbot.",
-    body: "Prism is a full-stack AI creative studio built with Next.js and TypeScript for image, video, and prompt generation. It provides project workspaces, authentication, and an AI co-pilot chatbot, and is designed around reusable components and AI-powered workflows for generating and managing creative content.",
+    body: "Built a full-stack AI creative studio using Next.js and TypeScript for image, video, and prompt generation, with project workspaces, authentication, and an AI co-pilot chatbot. Designed the application around reusable components and AI-powered workflows for generating and managing creative content.",
     tags: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
     highlights: [
-      "Image, video, and prompt generation in one workspace",
+      "Image, video, and prompt generation in one studio",
       "Project workspaces with authentication",
       "AI co-pilot chatbot for guided creation",
-      "Component-driven architecture around AI workflows",
+      "Reusable components around AI-powered workflows",
     ],
   },
   {
@@ -240,14 +241,14 @@ export const PROJECTS: Project[] = [
     number: "03",
     title: "App Lens",
     shortDesc:
-      "Web QA tool that scans sites for UI issues, broken links, console errors, and accessibility problems.",
-    body: "App Lens is a web QA and testing tool that scans websites for UI issues, broken links, console errors, and accessibility problems. It auto-generates test cases, captures screenshots and recordings, and exports reports — all organized by project. Built with React, Node.js, and Puppeteer, it runs in the browser or as an Electron desktop app for full-site automation without CORS limits.",
+      "Automated web QA tool that detects UI issues, broken links, console errors, and accessibility problems.",
+    body: "Built an automated web QA and testing tool that detects UI issues, broken links, console errors, and accessibility problems across websites. Automated test-case generation, screenshot and recording capture, and report generation to streamline website quality assurance workflows. Built with React, Node.js, and Puppeteer, with Electron support for full-site automation without browser CORS limitations.",
     tags: ["Vite", "React", "TypeScript", "Express", "Node.js", "Electron", "Puppeteer"],
     highlights: [
-      "Automated UI, link, console, and accessibility scanning",
-      "Auto-generated test cases with screenshots and recordings",
-      "Browser and Electron desktop modes for full-site automation",
-      "Project-based reports and export workflows",
+      "Automated UI, link, console, and accessibility detection",
+      "Automated test-case generation with screenshots and recordings",
+      "Report generation for QA workflows",
+      "Electron support for full-site automation without CORS limits",
     ],
   },
   {
@@ -255,13 +256,13 @@ export const PROJECTS: Project[] = [
     number: "04",
     title: "WeRQA Website",
     shortDesc:
-      "Platform stability and visual flow optimization through testing and precise code fixes.",
-    body: "Contributed to the WeRQA platform's stability and visual flow by conducting comprehensive testing and implementing precise code fixes for homepage animations and the Team section.",
+      "Platform stability and visual flow improvements through testing and precise code fixes.",
+    body: "Contributed to the platform's stability and visual flow by conducting comprehensive testing and implementing precise code fixes for the homepage animations and the Team section.",
     tags: ["HTML", "CSS"],
     highlights: [
       "Comprehensive testing of homepage animations and Team section",
-      "Implemented precise code fixes for visual flow improvements",
-      "Ensured platform stability and production-ready quality",
+      "Precise code fixes for visual flow improvements",
+      "Improved platform stability",
     ],
   },
   {
@@ -270,12 +271,12 @@ export const PROJECTS: Project[] = [
     title: "Chest X-Ray Detection",
     shortDesc:
       "Deep learning system for pneumonia detection from chest X-ray images.",
-    body: "Developed a deep learning-based system using Python to detect pneumonia from chest X-ray images. Implemented DenseNet and EfficientNet-B0 models to classify images as Normal or Pneumonia, achieving high accuracy through advanced feature extraction and model optimization.",
-    tags: ["Python", "Deep Learning", "AI"],
+    body: "Developed a deep learning-based system using Python to detect pneumonia from chest X-ray images. Implemented DenseNet and EfficientNet-B0 models to classify images as Normal or Pneumonia, achieving high accuracy and reliable performance through advanced feature extraction and model optimization techniques.",
+    tags: ["Python", "Deep Learning"],
     highlights: [
       "DenseNet and EfficientNet-B0 model implementation",
-      "Normal vs. Pneumonia image classification pipeline",
-      "High accuracy via advanced feature extraction",
+      "Normal vs. Pneumonia image classification",
+      "High accuracy via advanced feature extraction and optimization",
     ],
   },
 ];
