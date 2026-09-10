@@ -30,7 +30,7 @@ export const HERO_DISPLAY = {
 export const ABOUT_FACTS = [
   { label: "Based", value: "Lahore, Pakistan" },
   { label: "Focus", value: "Full Stack / Software" },
-  { label: "Experience", value: "2+ Years" },
+  { label: "Experience", value: "6 Months" },
   { label: "Mindset", value: "Always Learning" },
   { label: "Projects Done", value: "5+" },
   { label: "Education", value: "BS Computer Science" },
